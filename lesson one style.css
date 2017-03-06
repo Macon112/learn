@@ -1,12 +1,18 @@
 @charset "utf-8";
 /* 第一部分的样式表 */
-body {background-color:#E0E0E0;
-	  width:1282px;
-	  font-family: Tahoma, Geneva, sans-serif;
+body {background-color:#000;
+      margin:0px;
+	  padding:0px;
 	  }
-li {display:inline;}
+div.all {background-color:#CCC;
+	    width:1282px;
+	    font-family: Tahoma, Geneva, sans-serif;
+	    margin:0 auto;
+	    }
+img {padding:10px 0 10px 0;}
+/* 设置网页页眉样式 */
 div.header {
-	background-color:#000;
+	background-color:#666;
 	width:1280px;
 	height:60px;
 	padding:0px;
@@ -21,46 +27,78 @@ div.header h1 {
 	width:auto;
 	}
 div.header ul {
+	height:auto;
 	float:right;
-	width:auto;
+	margin-right:10px;
 	}
+/* 设置链接样式 */
+li {
+	margin:10px;
+	}
+li.a {float:left;
+	  list-style:none;
+	  background:url(%E5%9C%86%E7%82%B9.png) 0 2% no-repeat;
+	  padding-left:10px;
+	  }
 a.lianjie {
 	text-decoration:none;
 	color:#FFF;
 	}
+/* 字体的大小 */
+h1 {font-size:2em;}
+h2 {
+	font-size:1.5em;
+	font-weight:900;
+	}
+h3 {font-size:1em;}
+p  {font-size:0.8em;}
+li {font-size:0.8em;}
+/* 缩进 */
+p.neirong {
+	text-indent:25px;
+    }
 /* 第二部分的样式表 */
 div.conten1 {
 	background-color:#FFF;
 	padding:20px;
 	margin:20px;
 	border-style:solid;
-	border-width: 0px 1px 1px 0px;
+	border-width: 0px 2px 2px 0px;
+	border-color:#999
 	}
 /* 第三部分 */
 div.conten2 {
 	background-color:#FFF;
 	padding:20px;
 	margin:20px;
-	border-style: outset;
+	border-style:solid;
+	border-width: 0px 2px 2px 0px;
+	border-color:#999
 	}
 /* 第四部分 */
 div.conten3 {
 	background-color:#FFF;
 	padding:20px;
 	margin:20px;
-	border-style: outset;
+	border-style:solid;
+	border-width: 0px 2px 2px 0px;
+	border-color:#999
 	}
 /* 第五部分 */
 div.conten4 {
 	background-color:#FFF;
 	padding:20px;
 	margin:20px;
-	border-style: outset;
+	border-style:solid;
+	border-width: 0px 2px 2px 0px;
+	border-color:#999
 	}
 /* 第六部分 */
 div.conten5 {
 	background-color:#FFF;
 	padding:20px;
 	margin:20px;
-	border-style: outset;
+	border-style:solid;
+	border-width: 0px 2px 2px 0px;
+	border-color:#999
 	}
