@@ -36,21 +36,25 @@ li {
 	margin:10px;
 	}
 li.a {float:left;
-	  list-style:none;
-	  background:url(%E5%9C%86%E7%82%B9.png) 0 2% no-repeat;
-	  padding-left:10px;
 	  }
 a.lianjie {
 	text-decoration:none;
 	color:#FFF;
+	}
+a.lianjie_4 {
+	text-decoration:none;
+	color:#CCC;
 	}
 /* 字体的大小 */
 h1 {font-size:2em;}
 h2 {
 	font-size:1.5em;
 	font-weight:900;
+	color:#333;
 	}
-h3 {font-size:1em;}
+h3 {font-size:1em;
+	color:#666;
+	}
 p  {font-size:0.8em;}
 li {font-size:0.8em;}
 /* 缩进 */
@@ -66,6 +70,9 @@ div.conten1 {
 	border-width: 0px 2px 2px 0px;
 	border-color:#999
 	}
+ul.dierge {
+	list-style:circle;
+	}
 /* 第三部分 */
 div.conten2 {
 	background-color:#FFF;
@@ -75,6 +82,12 @@ div.conten2 {
 	border-width: 0px 2px 2px 0px;
 	border-color:#999
 	}
+div.tupian1 {
+	width:240px;
+	margin:10px;
+	text-align:center;
+	border-style:double;
+}
 /* 第四部分 */
 div.conten3 {
 	background-color:#FFF;
@@ -93,6 +106,20 @@ div.conten4 {
 	border-width: 0px 2px 2px 0px;
 	border-color:#999
 	}
+table.biaoge {
+	width:100%;
+	border-collapse:collapse;
+	border-color:#CCC;
+	font-size:0.8em;
+}
+td.zongji {
+	background-color:#CCC;
+}
+th {
+	background-color:#000;
+	color:#FFF;
+	border-color:#FFF;
+}
 /* 第六部分 */
 div.conten5 {
 	background-color:#FFF;
@@ -102,3 +129,23 @@ div.conten5 {
 	border-width: 0px 2px 2px 0px;
 	border-color:#999
 	}
+div.celan {
+	position:relative;
+	width:auto;
+	height:40px;
+	line-height:40px;
+	background-color:#FFF;
+	border-left:3px solid #666;
+	padding-left:5px;
+}
+div.biaogegeshi {
+	width:800px;
+	font-size:0.85em;	
+}
+table.diaocha {
+	margin-left:auto;
+	margin-right:auto;
+}
+td.diaochaneirong {
+	text-align:right;
+}
