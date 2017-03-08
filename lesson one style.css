@@ -149,3 +149,12 @@ table.diaocha {
 td.diaochaneirong {
 	text-align:right;
 }
+td.second {
+	padding-left:10px;
+}
+td.kuang {
+	padding-left:10px;
+}
+tr.kuang1 {
+	vertical-align:top;
+}
