@@ -29,7 +29,7 @@ div.header h1 {
 div.header ul {
 	height:auto;
 	float:right;
-	margin-right:10px;
+	margin-right:20px;
 	}
 /* 设置链接样式 */
 li {
@@ -157,4 +157,30 @@ td.kuang {
 }
 tr.kuang1 {
 	vertical-align:top;
+}
+textarea {
+	height:100px;
+	width:600px;
+}
+input.anniu {
+	width:100%;
+	height:40px;
+	font-size:1.5em;
+	font-weight:900;
+	color:#FFF;
+	background-color:#39F;
+	border-radius:8px;
+}
+div.banquan {
+	background-color:#666;
+	width:1280px;
+	height:60px;
+	padding:0px;
+	margin:0px;
+}
+p.banquan1 {
+	line-height:40px;
+	text-align:center;
+	color:#FFF;
+	font-weight:900;
 }
