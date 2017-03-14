@@ -1,0 +1,196 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+}
+/* 缩进 */
+p.neirong {
+	text-indent:25px;
+    }
+/* 图片格式 */
+img.tupian{
+	width:60%;
+}
+img {padding:10px 0 10px 0;}
+div.tupian1 {
+	width:240px;
+	margin:10px;
+	text-align:center;
+	border-style:double;
+}
+/* 字体的大小 */
+h1 {font-size:2em;}
+h2 {
+	font-size:1.5em;
+	font-weight:900;
+	color:#333;
+	}
+h3 {font-size:1em;
+	color:#666;
+	}
+p  {font-size:0.8em;}
+li {font-size:0.8em;}
+/* 页眉格式 */
+div.yemei{
+	background-color:#333;
+	width:100%;
+	height:60px;
+}
+div.yemei h1 {
+	color:#FFF;
+	float:left;
+	position:relative;
+	left:10px;
+	top:10px;
+	width:auto;
+}
+div.yemei ul {
+	height:auto;
+	float:right;
+	margin-right:20px;
+	margin-top:20px;
+}
+/* 设置链接样式 */
+li {
+	width:70px;
+	margin-left:20px;
+	}
+li.a {float:left;
+	  }
+a.lianjie {
+	text-decoration:none;
+	color:#FFF;
+	}
+a.lianjie_4 {
+	text-decoration:none;
+	color:#CCC;
+	}
+/* main 主体框架样式 */
+div.main{
+	background-color:#CCC;
+	position:absolute;
+	margin:0 auto;
+	overflow:auto;
+}
+div.geshi{
+	margin:20px 420px 20px 20px;
+	padding:20px;
+	background-color:#FFF;
+	border-style:solid;
+	border-width: 0px 2px 2px 0px;
+	border-color:#999
+}
+/* 第一部分样式 */
+div.conten1{
+}
+/* 第二部分样式 */
+div.conten2{
+}
+/* 第三部分样式 */
+div.conten3{
+	overflow:hidden;
+}
+div.tupian1{
+	float:left;
+}
+/* 第四部分样式 */
+div.conten4{
+}
+table.biaoge {
+	width:100%;
+	border-collapse:collapse;
+	border-color:#CCC;
+	font-size:0.8em;
+}
+td.zongji {
+	background-color:#CCC;
+}
+th {
+	background-color:#000;
+	color:#FFF;
+	border-color:#FFF;
+}
+/* 侧栏样式 */
+div.conten5{
+	width:340px;
+	background-color:#FFF;
+	margin:20px;
+	float:right;
+	padding:20px;
+	border-style:solid;
+	border-width: 0px 2px 2px 0px;
+	border-color:#999
+}
+div.celan {
+	position:relative;
+	width:auto;
+	height:40px;
+	line-height:40px;
+	background-color:#FFF;
+	border-left:3px solid #ccc;
+	padding-left:10px;
+}
+div.celan h2{
+	font-size:1em;
+}
+div.biaogegeshi {
+	width:100%;
+	font-size:0.85em;	
+}
+table.diaocha {
+	margin-left:auto;
+	margin-right:auto;
+}
+table.diaocha td{
+	padding:5px;
+}
+td.diaochaneirong {
+	text-align:right;
+}
+td.second {
+	padding-left:10px;
+}
+td.kuang {
+	padding-left:10px;
+}
+tr.kuang1 {
+	vertical-align:top;
+}
+textarea {
+	height:100px;
+	width:200px;
+}
+input.anniu {
+	width:100%;
+	height:40px;
+	font-size:1.5em;
+	font-weight:900;
+	color:#FFF;
+	background-color:#39F;
+	border-radius:8px;
+}
+div.banquan {
+	background-color:#666;
+	width:100%;
+	height:60px;
+	padding:0px;
+	margin:0px;
+}
+p.banquan1 {
+	line-height:40px;
+	text-align:center;
+	color:#FFF;
+	font-weight:900;
+}
+/* 页脚的样式 */
+div.yejiao{
+	width:100%;
+	height:60px;
+	background-color:#333;
+	float:left;
+	bottom:0;
+	left:0;
+}
+	
+	
