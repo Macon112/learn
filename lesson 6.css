@@ -66,4 +66,24 @@ div.hengxian{
 	background-color:#cc8091;
 	float:left;
 }
+/* 图片 */
+div.tupian{
+	width:641px;
+	height:301px;
+	background:url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1489747315026&di=e344c6ca21c27fb6dad1134df0a1fc95&imgtype=0&src=http%3A%2F%2Fimg1.utuku.china.com%2F600x0%2Fgame%2F20161028%2F5a968f7b-96f2-44a8-a878-a5595c965734.jpg) no-repeat;
+}
+div.diertouming1{
+	width:191px;
+	height:301px;
+	background-color:#0F0;
+	float:left;
+	opacity:0.3;
+}
+div.diertouming2{
+	width:191px;
+	height:301px;
+	background-color:#F00;
+	float:right;
+	opacity:0.3;
+}
 	
