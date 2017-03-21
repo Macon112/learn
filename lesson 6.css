@@ -132,24 +132,83 @@ div.diertouming2{
 /*第三部分*/
 div.disan{
 	width:892px;
-	height:301px;
-	background-color:#6FC;
+	height:auto;
 	float:left;
 	margin-top:20px;
 	margin-left:44px;
 }
+/*第三部分第一段文字*/
 div.disan1{
-	width:290px;
+	width:220px;
 	height:301px;
 	float:left;
 }
+div.disan1 p>span{
+	font-size:12px;
+	color:#767777;
+	font-family:"宋体";
+	line-height:16px;
+	letter-spacing:1px;
+}
+div.disan1 p.disan1biaoti1{
+	font-size:16px;
+	color:#418c59;
+	font-family:"微软雅黑";
+	font-weight:bold;
+	text-decoration:underline;
+	line-height:40px;
+	text-transform:capitalize;
+}
+/*第三部分第二段文字*/
 div.disan2{
-	width:209px;
+	width:200px;
 	height:301px;
 	float:left;
+	margin-left:20px;
 }
+div.disan2 p.disan2biaoti2{
+	font-size:16px;
+	color:#d2994f;
+	font-weight:bold;
+	text-decoration:underline;
+	line-height:40px;
+	text-transform:capitalize;
+}
+div.disan2 p>span{
+	font-size:12px;
+	color:#231815;
+	font-family:"微软雅黑";
+	line-height:16px;
+	opacity:0.7;
+	letter-spacing:1px;
+}
+/*第三部分第三段文字*/
 div.disan3{
 	width:209px;
 	height:301px;
 	float:left;
+	margin-left:20px;
+}
+div.disan3 p{
+	font-size:12px;
+	letter-spacing:2px;
+	font-family:"微软雅黑";
+	text-transform:capitalize;
+	opacity:0.7;
+}
+p#disan1{
+	margin-top:20px;
+}
+div.disan3 p>span{
+	font-style:oblique;
+	color:#cd4a48;
+	
+}
+div.disan3 p.disan3biaoti3{
+	font-size:16px;
+	color:#cc7680;
+	font-weight:bold;
+	text-decoration:underline;
+	line-height:40px;
+	text-transform:capitalize;
 }
