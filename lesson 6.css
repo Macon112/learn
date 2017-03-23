@@ -8,6 +8,7 @@ div.all {
 	width: 980px;
 	height: 1386px;
 	overflow: auto;
+	margin:0 auto;
 }
 /* 页眉格式 */
 div.yemei {
@@ -74,9 +75,11 @@ p.dierbiaoti {
 	font-family: "微软雅黑";
 	text-decoration: underline;
 	line-height: 40px;
+	text-transform:capitalize;
+	font-variant:small-caps;
 }
 p.dierbiaoti span {
-	font-size: 1.3em;
+
 }
 p#dier1 {
 	font-size: 12px;
@@ -98,7 +101,7 @@ p#dier3 {
 	font-family: "微软雅黑";
 	float: left;
 	position: relative;
-	top: -15px;
+	top: -18px;
 }
 p#dier4 {
 	font-size: 12px;
@@ -269,7 +272,158 @@ p.disineirong span{
 div.diwu{
 	width:458px;
 	height:630px;
-	background-color:#CC3;
 	float:left;
 	margin-left:20px;
 }
+/* 第五部分第一部分 */
+div.diwudiyi{
+	width:458px;
+	height:275px;
+	background:url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1490244344246&di=a60070e01202a11f7c30b405aa57efce&imgtype=0&src=http%3A%2F%2Fs.doyo.cn%2Fimg%2F57%2F67%2Ff4529e9e787e70000029.jpg) no-repeat;
+	background-size:458px 275px;
+}
+div#diwubeijing{
+	width:458px;
+	height:61px;
+	background-color:#000;
+	opacity:0.3;
+	position:relative;
+	top:214px;
+}
+div.diwuhengfu{
+	height:44px;
+	width:300px;
+	border-left:3px  solid #72b16a;
+	float:left;
+	margin-top:220px;
+	margin-left:30px;
+}
+div.diwuhengfu p{
+	line-height:44px;
+	margin-left:10px;
+	font-size:26px;
+	color:#ffffff;
+	font-family:"微软雅黑";
+}
+div.diwuhengfu p>span{
+	font-size:12px;
+	color:#72b16a;
+	font-style:oblique;
+}
+/* 第五部分第二 */
+div.diwudier{
+	width:458px;
+	height:318px;
+	background-color:#FFC;
+	position:relative;
+	top:30px;
+}
+div.diwudier ul{
+	list-style-image:url(sanjiao.png);
+	position:relative;
+	left:40px;
+	top:10px;
+	font-size:16px;
+	font-family:"宋体";
+}
+div.diwudier li{
+	line-height:36px;
+}
+div.diwudier li>span{
+	font-size:12px;
+	color:#5a5b5b;
+	font-family:"黑体";
+	font-style:oblique;
+}
+div.diwu1{
+	width:260px;
+	height:160px;
+	background-color:rgba(255,0,0,0.3);
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	color:#ffffff;
+}
+div.diwwu2{
+	width:auto;
+	height:px;
+}
+p#diwu3{
+	font-size:110px;
+	font-family:"微软雅黑";
+	float:left;
+	margin-top:7px;
+	margin-left:10px;
+	margin-right:5px;
+}
+p#diwu1{
+	font-size:21px;
+	font-family:"黑体";
+	line-height:24px;
+	font-style:oblique;
+	margin-top:5px;
+}
+p#diwu2{
+	font-size:12px;
+	font-family:"黑体";
+	line-height:6px;
+}
+div.diwu2 div{
+	height:86px;
+	float:left;
+	border-left:2px solid #ffffff;
+	padding-left:5px;
+	margin-top:40px;
+}
+div.zuihou{
+	width:189px;
+	height:150px;
+	position:absolute;
+	right:0px;
+	bottom:0px;
+	padding:5px;
+}
+div.zuihou p{
+	font-size:14px;
+	font-family:"黑体";
+	font-style:oblique;
+	line-height:16px;
+	margin-top:10px;
+	margin-left:10px;
+}
+span#zuihou1{
+	font-size:72px;;
+	color:#d45d5c;
+	position:absolute;
+	top:30px;
+	left:-35px;
+}
+span#zuihou2{
+	font-size:72px;;
+	color:#d45d5c;
+	position:absolute;
+	top:140px;
+	
+}
+#zuihouhengxian{
+	width:892px;
+	height:30px;
+	float:left;
+	margin-left:44px;
+	margin-top:20px;
+}
+#zuihouhengxian1{
+	width:892px;
+	height:2px;
+	background-color:#938e8c;
+}
+#zuihouhengxian p{
+	font-size:12px;
+	color:#d45d5c;
+	font-family:"黑体";
+	float:right;
+}
+	
+	
+
+
