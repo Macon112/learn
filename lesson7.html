@@ -10,11 +10,15 @@ p {
 	left: 50px;
 	top: -10px;
 }
+button{
+	position:relative;
+	left:200px;
+}
 </style>
 <script type="text/jscript">
 //获取字符串长度（汉字算两个字符，字母数字算一个字符）
-function a(){
-	var x=document.getElementById("demo").value;
+function a(w){
+	var x=document.getElementById(w).value;
 	var len=0;
 	for(var i=0;i<x.length;i++)
 	{
@@ -28,34 +32,68 @@ function a(){
 	}
 	return len;
 }
-function b(){
-	var c=a();
-if (4<c&c<16)
+function b(d){
+	var c=a(d);
+if (4<=c&c<=16)
   {
-  document.getElementById("demo2").innerHTML="名称格式正确";
-  document.getElementById("demo2").style.color="#00FF00";
+  document.getElementById("tips1").innerHTML="名称格式正确";
+  document.getElementById("tips1").style.color="#00FF00";
   document.getElementById("demo").style.borderColor="#00FF00";
   }
 else if (c==0)
   {
-  document.getElementById("demo2").innerHTML="姓名不能为空";
-  document.getElementById("demo2").style.color="#DC143C";
+  document.getElementById("tips1").innerHTML="姓名不能为空";
+  document.getElementById("tips1").style.color="#DC143C";
   document.getElementById("demo").style.borderColor="#DC143C";
   }
-else{
-  document.getElementById("demo2").innerHTML="长度限制为4~16个字符";
-  document.getElementById("demo2").style.color="#B8860B";
+/*else{
+  
+  document.getElementById("tips1").style.color="#B8860B";
   document.getElementById("demo").style.borderColor="#B8860B";
+}*/
 }
+function c(){
+	document.getElementById("tips1").innerHTML="必填，长度为4~16个字符";
+	}
+/*密码栏检验*/
+function mima1(){
+	document.getElementById("tips2").innerHTML="请输入6~12个字符";
+}
+function jianyan1(){
+	var c=a(demo1);
+	if (6<=c&c<=12)
+  {
+  document.getElementById("tips2").innerHTML="密码可用";
+  document.getElementById("tips2").style.color="#00FF00";
+  document.getElementById("demo1").style.borderColor="#00FF00";
+  }
+   else
+  {
+  document.getElementById("tips2").innerHTML="请输入正确格式的密码";
+  document.getElementById("tips2").style.color="#DC143C";
+  document.getElementById("demo1").style.borderColor="#DC143C";
+  }			
 }
 </script>
 </head>
 <form>
-  名称：
-  <input id="demo" type="text" name="m_1" />
-  <button id="demo1" type="button" onclick="b()">验证</button>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名称：
+  <input id="demo" type="text" name="m_1" onfocus="c()" onblur="b('demo1')"/>
+  <p id="tips1"></p>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;密码：
+  <input id="demo1" type="password" name="m_2" onfocus="mima1()" onblur="jianyan1()" />
+  <p id="tips2"></p>
+  确认密码：
+  <input id="demo2" type="password" name="m_3" />
+  <p id="tips3"></p>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;邮箱：
+  <input id="demo3" type="text" name="m_4" />
+  <p id="tips4"></p>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;手机：
+  <input id="demo4" type="text" name="m_5" />
+  <p id="tips5"></p>
+  <button id="demo1" type="button" onclick="">验证</button>
 </form>
-<p id="demo2">必填，长度为4~16个字符</p>
 <body>
 </body>
 </html>
