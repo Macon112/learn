@@ -16,6 +16,12 @@ button{
 }
 </style>
 <script type="text/jscript">
+//全局验证
+var g=0;
+var h=0;
+var j=0;
+var k=0;
+var l=0;
 //获取字符串长度（汉字算两个字符，字母数字算一个字符）
 function a(w){
 	var x=document.getElementById(w).value;
@@ -32,13 +38,14 @@ function a(w){
 	}
 	return len;
 }
-function b(d){
-	var c=a(d);
+function b(x){
+	var c=a(x);
 if (4<=c&c<=16)
   {
   document.getElementById("tips1").innerHTML="名称格式正确";
   document.getElementById("tips1").style.color="#00FF00";
   document.getElementById("demo").style.borderColor="#00FF00";
+  g=1;
   }
 else if (c==0)
   {
@@ -59,13 +66,14 @@ function c(){
 function mima1(){
 	document.getElementById("tips2").innerHTML="请输入6~12个字符";
 }
-function jianyan1(){
-	var c=a(demo1);
+function jianyan1(x){
+	var c=a(x);
 	if (6<=c&c<=12)
   {
   document.getElementById("tips2").innerHTML="密码可用";
   document.getElementById("tips2").style.color="#00FF00";
   document.getElementById("demo1").style.borderColor="#00FF00";
+  h=1;
   }
    else
   {
@@ -74,25 +82,87 @@ function jianyan1(){
   document.getElementById("demo1").style.borderColor="#DC143C";
   }			
 }
+/*再次输入验证*/
+function mima2(){
+	document.getElementById("tips3").innerHTML="请输入相同的密码"
+	}
+function jianyan2(){
+	var a=document.getElementById('demo1').value;
+	var b=document.getElementById('demo2').value;
+	if (a==b){
+		document.getElementById("tips3").innerHTML="密码相同";
+  		document.getElementById("tips3").style.color="#00FF00";
+  		document.getElementById("demo2").style.borderColor="#00FF00";
+		j=1;
+		}
+		else{
+document.getElementById("tips3").innerHTML="请输入相同的密码";
+document.getElementById("tips3").style.color="#DC143C";
+document.getElementById("demo2").style.borderColor="#DC143C";
+			}
+	}
+/*邮箱检验*/
+function youxiang(){
+	document.getElementById("tips4").innerHTML="请输入正确的邮箱地址"
+	}
+function jianyan3(){
+	var email=document.getElementById('demo3').value;
+	if(email.search(/^([a-zA-Z0-9]+[_|_|.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|_|.]?)*[a-zA-Z0-9]+\.(?:com|cn)$/)!= -1){
+		document.getElementById("tips4").innerHTML="邮箱正确";
+  		document.getElementById("tips4").style.color="#00FF00";
+  		document.getElementById("demo3").style.borderColor="#00FF00";
+		k=1;
+		}
+		else{
+			document.getElementById("tips4").innerHTML="请按格式输入邮箱地址";
+document.getElementById("tips4").style.color="#DC143C";
+document.getElementById("demo3").style.borderColor="#DC143C";
+			}
+	}
+/*手机验证*/
+function shouji(){
+	document.getElementById("tips5").innerHTML="请输入正确手机号码"
+	}
+function yanzheng4(){
+	var telphone=document.getElementById('demo4').value;
+	if (telphone.search(/^(((13[0-9]{1})|(15[0-9]{1}))+\d{8})$/)!= -1){
+		document.getElementById("tips5").innerHTML="手机正确";
+  		document.getElementById("tips5").style.color="#00FF00";
+  		document.getElementById("demo4").style.borderColor="#00FF00";
+		l=1;
+		}
+		else{
+			document.getElementById("tips5").innerHTML="请输入正确的手机";
+document.getElementById("tips5").style.color="#DC143C";
+document.getElementById("demo4").style.borderColor="#DC143C";
+			}
+	}
+/*检验所有表单*/
+function quanbu(){
+	if(g==1&h==1&j==1&k==1&l==1){
+		alert("提交成功")
+		}
+		else{alert("提交失败")}
+	}
 </script>
 </head>
 <form>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名称：
-  <input id="demo" type="text" name="m_1" onfocus="c()" onblur="b('demo1')"/>
+  <input id="demo" type="text" name="m_1" onfocus="c()" onblur="b('demo')"/>
   <p id="tips1"></p>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;密码：
-  <input id="demo1" type="password" name="m_2" onfocus="mima1()" onblur="jianyan1()" />
+  <input id="demo1" type="password" name="m_2" onfocus="mima1()" onblur="jianyan1('demo1')" />
   <p id="tips2"></p>
   确认密码：
-  <input id="demo2" type="password" name="m_3" />
+  <input id="demo2" type="password" name="m_3" onfocus="mima2()" onblur="jianyan2()"/>
   <p id="tips3"></p>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;邮箱：
-  <input id="demo3" type="text" name="m_4" />
+  <input id="demo3" type="text" name="m_4" onfocus="youxiang()" onblur="jianyan3()"/>
   <p id="tips4"></p>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;手机：
-  <input id="demo4" type="text" name="m_5" />
+  <input id="demo4" type="text" name="m_5" onfocus="shouji()" onblur="yanzheng4()"/>
   <p id="tips5"></p>
-  <button id="demo1" type="button" onclick="">验证</button>
+  <button id="all" type="button" onclick="quanbu()">验证</button>
 </form>
 <body>
 </body>
